@@ -1,5 +1,5 @@
 FROM node:alpine
 
 RUN set -x && \
-        apk --no-cache add rsync git && \
+        apk --no-cache add rsync git openssh-client && \
         npm -g install yarn
