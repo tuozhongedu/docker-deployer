@@ -2,4 +2,6 @@ FROM node:lts-alpine
 
 RUN set -x && \
         apk --no-cache add rsync git openssh-client && \
-        npm -g install yarn
+        npm -g install yarn && \
+        npm -g install shipit-cli && \
+        npm -g install shipit-deploy
